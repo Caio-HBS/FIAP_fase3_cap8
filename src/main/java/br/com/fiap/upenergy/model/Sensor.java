@@ -1,6 +1,5 @@
 package br.com.fiap.upenergy.model;
 
-
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -30,7 +29,7 @@ public class Sensor {
     private String codigoSerial;
     @ManyToOne
     @JoinColumn(name = "equipamento_id", nullable = false)
-    private Equipamento equipamento;
+    private Equipamento equipamentoId;
     private String tipo;
     private Boolean ativo;
 
